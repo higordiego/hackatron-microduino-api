@@ -4,7 +4,7 @@ module.exports = Model => {
     return {
         create: (res) => (data) => Model.create(data, {raw: true})
             .then(result => callbackObject.returnCreateSuccess(result, res))
-            .catch(error => callbackObject.returnError(error, res)),
+            .catch(callbackObject.returnError(res)),
 
         listAll: (query, res) => pages =>
             HelperPaginate.countAll(pages)

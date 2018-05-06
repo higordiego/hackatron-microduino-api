@@ -13,3 +13,7 @@ insert into Students (id, name, description, created_at, updated_at) values (1, 
 insert into Triggers (id, name, description, created_at, updated_at) values (2, 'Funções Matemáticas', 'Ao conjunto {\displaystyle D\,\!} {\displaystyle D\,\!} denomina-se domínio da função, sendo seus elementos denominados abscissas, e ao conjunto {\displaystyle C\,\!} {\displaystyle C\,\!} denomina-se contra-domínio, sendo seus elementos denominados ordenadas ou imagens, quando estas se correlacionarem a um elemento de {\displaystyle D\,\!} {\displaystyle D\,\!}.', now(), now());
 
 
+-- Users
+insert into Users (id, cpf, password, status, created_at, updated_at) values (1, '03506838326', md5('123456'), true, now(), now())
+
+
