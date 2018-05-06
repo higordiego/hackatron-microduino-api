@@ -1,0 +1,7 @@
+{
+    "apps": [{
+        "name": "clinic-api",
+        "timezone": "-03:00",
+        "script": "./app.js"
+    }]
+}
